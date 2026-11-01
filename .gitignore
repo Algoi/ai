@@ -1,4 +1,40 @@
+# 虚拟环境
 .venv/
+venv/
+
+# Python 字节码和工具缓存
+__pycache__/
+*.py[cod]
 .cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+
+# 打包和构建产物
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Notebook 自动检查点
+.ipynb_checkpoints/
+
+# 本地环境变量和密钥；允许提交不含密钥的配置示例
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# 测试覆盖率产物
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# IDE 配置和系统临时文件
 .idea/
 .vscode/
+.DS_Store
+Thumbs.db
