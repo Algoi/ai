@@ -1,0 +1,24 @@
+[project]
+name = "ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "huyaunhai", email = "hyh.18816485035@gmail" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "llama-index-core>=0.14.25",
+    "llama-index-embeddings-huggingface>=0.8.0",
+    "llama-index-llms-openai-like>=0.8.1",
+    "llama-index-readers-file>=0.7.0",
+    "pypdf>=6.21.4",
+    "sentence-transformers>=6.2.0",
+]
+
+[project.scripts]
+ai = "ai:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
