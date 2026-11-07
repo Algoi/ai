@@ -33,7 +33,7 @@ Settings.embed_model = HuggingFaceEmbedding(model_name=EMBEDDING_MODEL_NAME)
 
 # 第一步：加载 data 目录中的 PDF
 documents = SimpleDirectoryReader(
-    "/home/huyuanhai/project/datas/data",
+    "./datas/pdf",
     required_exts=[".pdf"]
 ).load_data()
 
